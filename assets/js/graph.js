@@ -1,30 +1,15 @@
 export const graph = (datos, contenedor) => {
+  console.log(datos);
+  //   console.log(contenedor);
+
   new Chart(contenedor, {
     type: 'bar',
     data: {
-      labels: [
-        'Enero',
-        'Febrero',
-        'Marzo',
-        'Abril',
-        'Mayo',
-        'Junio',
-        'Julio',
-        'Agosto',
-        'Septiembre',
-        'Octubre',
-        'Noviembre',
-        'Diciembre',
-      ],
+      labels: datos.labels,
       datasets: [
         {
           label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1,
-        },
-        {
-          label: 'Moneda Total',
-          data: [12, 19, 3, 5, 2, 3],
+          data: datos.data,
           borderWidth: 1,
         },
       ],

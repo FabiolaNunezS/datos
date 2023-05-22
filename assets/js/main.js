@@ -21,10 +21,9 @@ const handleRequest = async () => {
     // drawTable(datos.CodigosBalances, container);
     //!fin
     const canva = document.getElementById('grafico');
-
-    //*esta parte al descomentarlo me salta a un error
-    // const datosFormateados = formatData(datos);
-    // graph(datosFormateados, canva);
+    const datosFormateados = formatData(datos);
+    // console.log(datosFormateados);
+    graph(datosFormateados, canva);
 
     // PRUEBAS
     // console.log(datos);
