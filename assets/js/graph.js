@@ -8,7 +8,7 @@ export const graph = (datos, contenedor) => {
       labels: datos.labels,
       datasets: [
         {
-          label: '# of Votes',
+          label: 'Moneda Total',
           data: datos.data,
           borderWidth: 1,
         },
