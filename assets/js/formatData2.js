@@ -1,4 +1,4 @@
-export const formatData = (datos) => {
+export const formatData2 = (datos) => {
   const meses = [
     'Enero',
     'Febrero',

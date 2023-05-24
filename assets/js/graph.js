@@ -1,14 +1,13 @@
-export const graph = (datos, contenedor) => {
-  console.log(datos);
-  //   console.log(contenedor);
-
+export const graph = (datos, contenedor, typeChart) => {
+  //   console.log(datos);
+  console.log(contenedor);
   new Chart(contenedor, {
-    type: 'bar',
+    type: typeChart,
     data: {
       labels: datos.labels,
       datasets: [
         {
-          label: 'Moneda Total',
+          label: '# of Votes',
           data: datos.data,
           borderWidth: 1,
         },
